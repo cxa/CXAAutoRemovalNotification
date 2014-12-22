@@ -1,6 +1,6 @@
 # CXAAutoRemovalNotification
 
-Less boiplate code for `NSNotificationCenter`.
+Less boilerplate code for `NSNotificationCenter`.
 
 ## Usage
 
@@ -10,7 +10,7 @@ Whereever you need `NSNotificationCenter` to observe using block by `- addObserv
 
 ### Example
 	__weak typeof(self) weakSelf = self;
-	[self cxa_addObserverForName:UIContentSizeCategoryDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+	[self cxa_addObserverForName:UIContentSizeCategoryDidChangeNotification usingBlock:^(NSNotification *note) {
 	   [weakSelf.tableView reloadData];
 	}];
 		
