@@ -1,5 +1,7 @@
 # CXAAutoRemovalNotification
 
+*Notice*: observers of `NSNotificationCenter` are not required to un-register in their deallocation since iOS 9 / OS X 10.11: (https://developer.apple.com/library/prerelease/mac/releasenotes/Foundation/RN-Foundation/index.html#10_11NotificationCenter)
+
 Less boilerplate code for `NSNotificationCenter`.
 
 ## Usage
